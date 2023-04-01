@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.headline {
+  text-align: center;
+  font-size: 2em;
+}
+
+.Header, .Education, .Experience {
+  border: solid 1px red;
+  padding: 20px;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h5 {
+  font-weight: 200;
+  color: rgb(26, 26, 26);
+}
+
+.email, .number {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.profile-image {
+  width: 200px;
+  height: 100px;
+  border: solid 1px greenyellow;
+}
+
+.profile-image img{
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.name-label{
+  font-size: 1em;
+}
+
+.name{
+  font-size: 2em;
+  font-weight: 700;
+}
+
+input {
+  border: none;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: solid 1px black;
+}
