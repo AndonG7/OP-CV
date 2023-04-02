@@ -68,3 +68,34 @@ input:focus {
   outline: none;
   border-bottom: solid 1px black;
 }
+
+.add-education { 
+  background-color: rgb(230, 230, 230);
+  border: solid 3px rgb(179, 179, 179);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.add-education:hover {
+  background-color: rgb(201, 201, 201);
+}
+
+.add-education:active {
+  background-color: rgb(179, 179, 179);
+}
+
+.ed-info-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
