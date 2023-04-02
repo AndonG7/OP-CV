@@ -3,11 +3,19 @@
   padding: 0;
 }
 
+body {
+  padding: 100px;
+  background-color: rgb(15, 13, 41);
+}
+
 .App {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 10px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 25px;
 }
 
 .headline {
@@ -17,7 +25,6 @@
 
 .Header, .Education, .Experience {
   border: solid 1px red;
-  padding: 20px;
 }
 
 .Header {
@@ -36,9 +43,7 @@ h5 {
 }
 
 .profile-image {
-  width: 200px;
-  height: 100px;
-  border: solid 1px greenyellow;
+  width: 100px;
 }
 
 .profile-image img{
@@ -95,6 +100,37 @@ input:focus {
 }
 
 .Education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-experience { 
+  background-color: rgb(230, 230, 230);
+  border: solid 3px rgb(179, 179, 179);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.add-experience:hover {
+  background-color: rgb(201, 201, 201);
+}
+
+.add-experience:active {
+  background-color: rgb(179, 179, 179);
+}
+
+.ex-info-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Experience-list {
   display: flex;
   flex-direction: column;
   gap: 15px;

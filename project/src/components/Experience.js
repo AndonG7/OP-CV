@@ -1,7 +1,14 @@
-function Experience() {
+import ExperienceList from "./ExperienceList.js";
+
+function Experience({exInfo, exHandleClick, handleExItemChange}) {
     return (
       <div className="Experience">
-        <h1>Hello Experience</h1>
+        <h2>Experience</h2><br></br>
+        <ExperienceList exInfo={exInfo} exHandleClick={exHandleClick} handleExItemChange={handleExItemChange} />
+        <br></br>
+        <div className="add-experience" onClick={exHandleClick}>
+          <span>+</span><span>Add Experience</span>
+        </div>
       </div>
     );
   }
