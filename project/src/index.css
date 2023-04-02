@@ -24,7 +24,12 @@ body {
 }
 
 .Header, .Education, .Experience {
-  border: solid 1px red;
+  padding: 25px 0;
+  border-bottom: solid 1px black;
+}
+
+.Experience {
+  border-bottom: none;
 }
 
 .Header {
@@ -52,17 +57,22 @@ h5 {
 
 .info {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .name-label{
   font-size: 1em;
 }
 
-.name{
+.name-section .name{
   font-size: 2em;
   font-weight: 700;
+  width: 400px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 input {
@@ -75,8 +85,7 @@ input:focus {
 }
 
 .add-education { 
-  background-color: rgb(230, 230, 230);
-  border: solid 3px rgb(179, 179, 179);
+  
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -106,8 +115,6 @@ input:focus {
 }
 
 .add-experience { 
-  background-color: rgb(230, 230, 230);
-  border: solid 3px rgb(179, 179, 179);
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -134,4 +141,15 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+p {
+  font-size: 1em;
+  color: rgb(53, 53, 53);
+  font-weight: 100;
+}
+
+.ed-info-section input, .ex-info-section input {
+  font-size: 1.5em;
+  background-color: transparent;
 }
